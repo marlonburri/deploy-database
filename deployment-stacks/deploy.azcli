@@ -1,0 +1,6 @@
+az deployment sub what-if \
+    --name Deployment-$(date +"%Y-%m-%dT%H-%M-%S") \
+    --location westeurope \
+    --template-file main.bicep \
+    --parameters \
+      adminPassword=let-me-query-that-for-you~1
